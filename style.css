@@ -12,8 +12,6 @@ html, body {
     padding-top: 50px;
     padding-left: 20px;
     padding-bottom: 0px;
-
-    border: 2px solid darkgreen;
 }
 .logo-container {
     display: flex;
@@ -22,7 +20,6 @@ html, body {
 .logo-almased {
     position: absolute;
     padding-bottom: 0px;
-    
     
 }
 .logo-trekendesh {
@@ -38,17 +35,16 @@ html, body {
 }
 .button-container {
     padding-left: 200px;
-    padding-top: 49px;
-
+    padding-top: 43px;
 
 }
 .button {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
-    size: 18px;
+    font-size: 18px;
     color: #FFFFFF;
     border-radius: 20px;
-    letter-spacing: 5%;
+    letter-spacing: 0.8px;
     align-items: center;
     border: 1px solid #55AB25;
     background-color: #55AB25;
@@ -56,5 +52,64 @@ html, body {
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
+    transition: background-color 0.4s ease, border 0.4s ease, color 0.4s ease;
+    transition: 0.4s ease;
 
+}
+.button:hover {
+    cursor:pointer;
+    background-color: #54ab25b4;
+    border: 1px solid transparent;
+    transform: scale(1.05);
+}
+.about-container, .science-container, .results-container, .goals-container, .usage-container, .learn-container {
+    padding-left: 63px;
+    padding-top: 41.75px;
+
+}
+.about, .science, .results, .goals, .usage, .learn {
+    position: relative;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans Nova', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    line-height: 100%;
+    letter-spacing: 0.65px;
+}
+.about::after, .science::after, .results::after, .goals::after, .usage::after, .learn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #55AB25;
+    left: 50%;
+    bottom: -2px;
+    transition: width 0.4s ease;
+    transform: translateX(-50%);
+}
+.about:hover, .science:hover, .results:hover, .goals:hover, .usage:hover, .learn:hover {
+    cursor: pointer;
+    color: #55AB25;
+}
+.about:hover::after, .science:hover::after, .results:hover::after, .goals:hover::after, .usage:hover::after, .learn:hover::after {
+    width: 100%;
+    left: 50%;
+}
+
+.search-container, .user-container, .cart-container {
+    padding-left: 63px;
+    padding-top: 52.5px;
+
+}
+
+.search-icon, .user-icon, .cart-icon {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.search-icon:hover, .user-icon:hover, .cart-icon:hover {
+    cursor: pointer;
+    transform: scale(1.17);
+    filter: brightness(0.8);
 }
