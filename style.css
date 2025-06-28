@@ -2,13 +2,22 @@ html, body {
     margin: 0;
     padding: 0;
 }
-.container {
-    display: flex;
-    width: 1512px;
-    height: 110px;
+header.navbar {
+    width: 100vw !important;
+    left: 0;
+    right: 0;
     position: relative;
     background-color: #FFFFFF;
-    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.03);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.03);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 110px;
+    position: relative;
     padding-top: 50px;
     padding-left: 20px;
     padding-bottom: 0px;
@@ -16,6 +25,7 @@ html, body {
 .logo-container {
     display: flex;
     align-items: left;
+    padding-left: 10px;
 }
 .logo-almased {
     position: absolute;
@@ -62,6 +72,10 @@ html, body {
     border: 1px solid transparent;
     transform: scale(1.05);
 }
+.sections {
+    display: flex;
+    position: relative;
+}
 .about-container, .science-container, .results-container, .goals-container, .usage-container, .learn-container {
     padding-left: 63px;
     padding-top: 41.75px;
@@ -97,11 +111,19 @@ html, body {
     width: 100%;
     left: 50%;
 }
+.icons{
+    display: flex;
+    position: relative;
+}
 
 .search-container, .user-container, .cart-container {
-    padding-left: 63px;
+    position: relative;
+    padding-left: 13px;
     padding-top: 52.5px;
 
+}
+.search-container{
+    padding-left: 63px;
 }
 
 .search-icon, .user-icon, .cart-icon {
@@ -113,3 +135,53 @@ html, body {
     transform: scale(1.17);
     filter: brightness(0.8);
 }
+
+/* Hide desktop nav and show hamburger on mobile 
+@media (max-width: 750px) {
+    .about-container,
+    .science-container,
+    .results-container,
+    .goals-container,
+    .usage-container,
+    .learn-container,
+    .button-container,
+    .right-side-container {
+        display: none;
+    }
+@media (max-width: 750px) {
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .mobile-menu .menu-item {
+        padding: 16px;
+        border-bottom: 1px solid #eee;
+        color: #55AB25;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+}
+}
+
+ Hide mobile menu by default on desktop 
+.mobile-menu {
+    display: none;
+}
+.hamburger {
+    display: none;
+}*/
