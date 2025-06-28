@@ -1,4 +1,4 @@
-html, body {
+html, body { 
     margin: 0;
     padding: 0;
 }
@@ -9,8 +9,6 @@ header.navbar {
     position: relative;
     background-color: #FFFFFF;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.03);
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .container {
@@ -30,7 +28,6 @@ header.navbar {
 .logo-almased {
     position: absolute;
     padding-bottom: 0px;
-    
 }
 .logo-trekendesh {
     position: absolute;
@@ -41,12 +38,10 @@ header.navbar {
     position: absolute;
     padding-left: 139px;
     padding-bottom: 0px;
-
 }
 .button-container {
     padding-left: 200px;
     padding-top: 43px;
-
 }
 .button {
     font-family: 'Jost', sans-serif;
@@ -64,7 +59,6 @@ header.navbar {
     padding-right: 15px;
     transition: background-color 0.4s ease, border 0.4s ease, color 0.4s ease;
     transition: 0.4s ease;
-
 }
 .button:hover {
     cursor:pointer;
@@ -79,9 +73,8 @@ header.navbar {
 .about-container, .science-container, .results-container, .goals-container, .usage-container, .learn-container {
     padding-left: 63px;
     padding-top: 41.75px;
-
 }
-.about, .science, .results, .goals, .usage, .learn {
+.shop, .about, .science, .results, .goals, .usage, .learn {
     position: relative;
     display: inline-block;
     font-family: 'Gill Sans', 'Gill Sans Nova', 'Trebuchet MS', sans-serif;
@@ -92,7 +85,7 @@ header.navbar {
     line-height: 100%;
     letter-spacing: 0.65px;
 }
-.about::after, .science::after, .results::after, .goals::after, .usage::after, .learn::after {
+.shop::after, .about::after, .science::after, .results::after, .goals::after, .usage::after, .learn::after {
     content: "";
     position: absolute;
     width: 0;
@@ -103,85 +96,144 @@ header.navbar {
     transition: width 0.4s ease;
     transform: translateX(-50%);
 }
-.about:hover, .science:hover, .results:hover, .goals:hover, .usage:hover, .learn:hover {
+.shop:hover, .about:hover, .science:hover, .results:hover, .goals:hover, .usage:hover, .learn:hover {
     cursor: pointer;
     color: #55AB25;
 }
-.about:hover::after, .science:hover::after, .results:hover::after, .goals:hover::after, .usage:hover::after, .learn:hover::after {
+.shop:hover::after, .about:hover::after, .science:hover::after, .results:hover::after, .goals:hover::after, .usage:hover::after, .learn:hover::after {
     width: 100%;
     left: 50%;
 }
-.icons{
+.icons {
     display: flex;
     position: relative;
+    align-items: center;
+    gap: 10px;
 }
-
 .search-container, .user-container, .cart-container {
     position: relative;
     padding-left: 13px;
-    padding-top: 52.5px;
-
+    padding-top: 28px;
 }
-.search-container{
+.search-container {
     padding-left: 63px;
 }
-
 .search-icon, .user-icon, .cart-icon {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
-
 .search-icon:hover, .user-icon:hover, .cart-icon:hover {
     cursor: pointer;
     transform: scale(1.17);
     filter: brightness(0.8);
 }
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 1;
+    text-align: center;
+    user-select: none;
+}
 
-/* Hide desktop nav and show hamburger on mobile 
-@media (max-width: 750px) {
-    .about-container,
-    .science-container,
-    .results-container,
-    .goals-container,
-    .usage-container,
-    .learn-container,
-    .button-container,
-    .right-side-container {
+@media only screen and (min-width: 751px) {
+    header.navbar {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .button-container {
+        display: block;
+    }
+    .shop-container-mobile {
         display: none;
     }
+}
+
 @media (max-width: 750px) {
+    header.navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     .hamburger {
         display: block;
-        font-size: 2rem;
-        background: none;
-        border: none;
-        cursor: pointer;
-        z-index: 1001;
+        z-index: 1100;
     }
-    .mobile-menu {
+    .button-container {
+        display: none;
+    }
+    .shop-container-mobile {
         display: block;
+    }
+    .navbar .container {
+        justify-content: center;
+    }
+    .nav-wrapper {
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
-        background: #fff;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        z-index: 1000;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        z-index: 1100;
+        height: auto;
+        padding: 10px 20px;
+        box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.03);
     }
-
-    .mobile-menu .menu-item {
-        padding: 16px;
-        border-bottom: 1px solid #eee;
-        color: #55AB25;
-        font-size: 1.2rem;
-        cursor: pointer;
+    .nav-wrapper.active {
+        display: flex;
+    }
+    .sections {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0;
+        position: relative;
+        z-index: 1100;
+    }
+    .search-container, .user-container, .cart-container {
+        padding-left: 0;
+        padding-top: 0;
+        position: static;
+    }
+    .cart-container {
+        padding-right: 30px;
+    }
+    .logo-container {
+        align-items: center;
+        flex-grow: 1;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .logo-almased,
+    .logo-trekendesh,
+    .logo-R {
+        position: absolute;
+        padding-bottom: 0;
+    }
+    .logo-R {
+        padding-bottom: 68px;
+        margin-left: 4px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        height: auto;
+    }
+    .shop-container-mobile, .about-container, .science-container, .results-container,
+    .goals-container, .usage-container, .learn-container {
+        padding-left: 0;
+        padding-top: 10px;
     }
 }
-}
-
- Hide mobile menu by default on desktop 
-.mobile-menu {
-    display: none;
-}
-.hamburger {
-    display: none;
-}*/
