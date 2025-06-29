@@ -69,9 +69,21 @@
 
     hamburger.addEventListener("click", () => {
         navWrapper.classList.toggle("active");
+        document.body.style.overflow = navWrapper.classList.contains("active") ? 'hidden' : 'auto';
     });
 </script>
-
-
+<div class="hero-banner">
+    <div class="hero-image">
+        <img src="images/protein.jpg" alt="hero image">
+    </div>
+    <div class="hero-text">
+        <p class="natural">Natural</p>
+        <p class="super">Superfood</p>
+        <p class="protein">Protein</p>
+        <p class="small-text">for optimal health</p>
+        <div class="hero-button-container">
+            <button class="hero-button">Start Almased today →</button>
+        </div>
+    </div>
 </body>
 </html>
