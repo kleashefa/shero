@@ -301,7 +301,7 @@ header.navbar {
     .button-container {
         display: block;
     }
-    .shop-container-mobile {
+    .button-container-hamburger {
         display: none;
     }
 }
@@ -323,9 +323,32 @@ header.navbar {
     .button-container {
         display: none;
     }
-    .shop-container-mobile {
+    .button-container-hamburger {
         display: block;
     }
+    .button-hamburger {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    border-radius: 19px;
+    letter-spacing: 0.8px;
+    border: 1px solid #55AB25;
+    background-color: #55AB25;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 120px;
+    transition: background-color 0.4s ease, border 0.4s ease, color 0.4s ease;
+    transition: 0.4s ease;
+    box-sizing: border-box;
+}
+.button-hamburger:hover {
+    cursor:pointer;
+    background-color: #54ab25b4;
+    border: 1px solid transparent;
+    transform: scale(1.05);
+}
     .navbar .container {
         justify-content: center;
     }
@@ -353,7 +376,7 @@ header.navbar {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
-        padding: 0;
+        padding-left: 10px;
         margin: 0;
   }
     .icons {
@@ -396,9 +419,9 @@ header.navbar {
         padding-top: 10px;
         height: auto;
     }
-    .shop-container-mobile, .about-container, .science-container, .results-container,
+    .shop-container, .about-container, .science-container, .results-container,
     .goals-container, .usage-container, .learn-container {
-        padding-left: 0;
+        padding-left: 15px;
         padding-top: 10px;
     }
     .hero-text {
