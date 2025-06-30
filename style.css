@@ -38,26 +38,12 @@ header.navbar {
     height: auto;
     padding: 0;
 }
-.logo-almased {
+.logo{
     position: static;
     box-sizing: border-box;
     object-fit: contain;
     padding-bottom: 0;
     padding-right: 0;
-}
-.logo-trekendesh {
-    position: absolute;
-    box-sizing: border-box;
-    object-fit: contain;
-    padding-left: 0;
-    padding-top: 30px;
-}
-.logo-R {
-    position: absolute;
-    box-sizing: border-box;
-    object-fit: contain;
-    padding-left: 139px;
-    padding-bottom: 67px;
 }
 .button-container {
     display: flex;
@@ -401,15 +387,10 @@ header.navbar {
         padding-left: 0;
         justify-content: center;
     }
-    .logo-almased,
-    .logo-trekendesh,
-    .logo-R {
+    .logo{
         position: absolute;
         padding-bottom: 0;
-    }
-    .logo-R {
-        padding-bottom: 68px;
-        margin-left: 4px;
+        padding-left: 35px;
     }
     .container {
         display: flex;
