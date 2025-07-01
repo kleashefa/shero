@@ -8,8 +8,10 @@ header.navbar {
     overflow-x: hidden;
     left: 0;
     right: 0;
-    position: relative;
-    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1000;
 }
 
 .nav-wrapper{
@@ -200,6 +202,7 @@ header.navbar {
     display: block;
     filter: brightness(0.6);
 }
+
 /* Carousel Vijat ne fund */
 .glide__bullets {
     position: absolute;
@@ -271,18 +274,18 @@ header.navbar {
     position: absolute;
     top: 60%;
     left: 15%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Jost', sans-serif;
     transform: translate(-50%, -50%);
     color: #ffffff;
     text-align: left;
 }
 .natural, .super, .protein {
-    font-weight: 520;
+    font-weight: 500;
     font-size: 55px;
     line-height: 0.3;
 }
 .small-text {
-    font-weight: 50;
+    font-weight: 400;
     font-size: 30px;
     line-height: 0.3;
     margin-bottom: 90px;
@@ -296,8 +299,8 @@ header.navbar {
     text-align: left; 
 }
 .hero-button {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
+    font-family:'Jost', sans-serif;
+    font-weight: 500;
     font-size: 18px;
     color: #000000;
     border-radius: 9px;
@@ -371,13 +374,113 @@ header.navbar {
 .tab-section {
     position: relative;
     overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
-.tab-image img{
+.tab-section-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+.tab-button {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: 2px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 5px;
+    gap: 5px;
+    transition: background-color 0.4s ease, border 0.4s ease, color 0.4s ease;
+    transition: 0.4s ease;
+}
+.tab-button:hover {
+    cursor: pointer;
+    background-color: #55AB25;
+    border: 2px solid transparent;
+    transform: scale(1.02);
+}
+.tab-button:hover .button-title, .tab-button:hover .plus {
+    color: #ffffff;
+}
+.plus {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #dfdcdcf6;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    line-height: 1;
+}
+.button-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #55AB26;
+    font-weight: 200;
+    font-size: 20px;
+    margin: 0;
+    line-height: 1;
+}
+.tab-image img {
+    position: relative;
     width: -webkit-fill-available;
     object-fit: cover;
     display: block;
     overflow: hidden;
-    position: relative;
+}
+.tab-title {
+    position: absolute;
+    text-align: center;
+    line-height: 1.1;
+    top: 20%;
+    left: 7%;
+    width: 35%;
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color:#238014;
+    font-weight: 300;
+    font-size: 65px;
+    margin: 0;
+}
+.tab-description {
+    position: absolute;
+    text-align: center;
+    top: 48%;
+    left: 10%;
+    width: 27%;
+    font-family: 'Jost', sans-serif;
+    color: #55AB26;
+    font-weight: 400;
+    font-size: 20px;
+}
+.tab-shop-button {
+    position: absolute;
+    top: 66%;
+    left: 15%;
+    font-family: 'Jost', sans-serif;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    background-color: #55AB26;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 3%;
+    width: 231px;
+    height: 76px;
+    transition: background-color 0.4s ease, border 0.4s ease, color 0.4s ease;
+    transition: 0.4s ease;
+}
+.tab-shop-button:hover {
+    cursor: pointer;
+    background-color: #54ab25b4;
+    border: 2px solid transparent;
+    transform: scale(1.05);
 }
 
 @media only screen and (min-width: 901px) {
@@ -535,5 +638,10 @@ header.navbar {
         transform: none;
         
     }
+    .tab-button {
+        align-items: flex-start;
+    }
+    .plus, .tab-title {
+        text-align: left;
+    }
 }
-
