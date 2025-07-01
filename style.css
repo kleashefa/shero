@@ -161,13 +161,104 @@ header.navbar {
     cursor: pointer;
     filter: brightness(0.2);
 }
-.hero-banner {
-    width: 100%;
-    height: 100vh;
+
+/* Glide.js Carousel Styles */
+.glide {
     position: relative;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
+.glide__track {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.glide__slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    will-change: transform;
+}
+
+.glide__slide {
+    width: 100%;
+    height: 100vh;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.glide__slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.6);
+}
+
+/* Carousel Indicators (Bullets) */
+.glide__bullets {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+}
+
+.glide__bullet {
+    width: 50px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.glide__bullet:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.glide__bullet--active {
+    background-color: #FFEE00 !important;
+    transform: scaleY(1.5);
+}
+
+/* Pause/Play Button */
+.glide__pause-play {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 10;
+}
+
+.glide__pause-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.glide__pause-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: #FFEE00;
+    transform: scale(1.1);
+}
 .hero-image img {
     width: 100%;
     height: 100vh;
@@ -278,6 +369,18 @@ header.navbar {
     line-height: 1.5;
     max-width: 110px;
 }
+.tab-section {
+    position: relative;
+    overflow: hidden;
+}
+.tab-image img{
+    width: -webkit-fill-available;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
 @media only screen and (min-width: 901px) {
     header.navbar {
         width: 100%;
@@ -406,7 +509,7 @@ header.navbar {
         padding-top: 10px;
     }
     .hero-text {
-        top: 25%;
+        top: 45%;
         left: 50%;
         width: 90vw;
         text-align: center;
