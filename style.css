@@ -162,7 +162,7 @@ header.navbar {
     filter: brightness(0.2);
 }
 
-/* Glide.js Carousel Styles */
+/* Carousel fotot*/
 .glide {
     position: relative;
     width: 100%;
@@ -200,8 +200,7 @@ header.navbar {
     display: block;
     filter: brightness(0.6);
 }
-
-/* Carousel Indicators (Bullets) */
+/* Carousel Vijat ne fund */
 .glide__bullets {
     position: absolute;
     bottom: 30px;
@@ -231,7 +230,7 @@ header.navbar {
     transform: scaleY(1.5);
 }
 
-/* Pause/Play Button */
+/* Pause Button */
 .glide__pause-play {
     position: absolute;
     bottom: 30px;
@@ -270,7 +269,7 @@ header.navbar {
 }
 .hero-text {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 15%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transform: translate(-50%, -50%);
@@ -286,14 +285,14 @@ header.navbar {
     font-weight: 50;
     font-size: 30px;
     line-height: 0.3;
+    margin-bottom: 90px;
 }
 
 .hero-button-container {
     position: static;
     transform: none;
-    top: 70%;
+    top: 90%;
     left: 15%;
-    margin-top: 80px;
     text-align: left; 
 }
 .hero-button {
@@ -306,10 +305,10 @@ header.navbar {
     align-items: center;
     border: 1px solid #FFEE00;
     background-color: #FFEE00;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     transition: background-color 0.4s ease, border 0.4s ease, color 0.4s ease;
     transition: 0.4s ease;
 }
