@@ -6,6 +6,13 @@
     <title>Almased</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.6.0/dist/css/glide.core.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="navbar">
@@ -137,8 +144,35 @@
 </div>
 
 <div class="tab-section">
+    <div class="tab-section-buttons">
+        <button class="tab-button" data-tab="meal">
+            <p class="plus">+</p>
+            <p class="button-title">Daily Nutrition Meal</p>
+        </button>
+        <button class="tab-button" data-tab="weight">
+            <p class="plus">+</p>
+            <p class="button-title">Weight Loss</p>
+        </button>
+        <button class="tab-button" data-tab="muscleP">
+            <p class="plus">+</p>
+            <p class="button-title">Muscle Preservation</p>
+        </button>
+        <button class="tab-button" data-tab="muscleG">
+            <p class="plus">+</p>
+            <p class="button-title">Muscle Gain</p>
+        </button>
+        <button class="tab-button" data-tab="all-goals">
+            <p class="plus">+</p>
+            <p class="button-title">All Health Goals</p>
+        </button>
+    </div>
     <div class="tab-image">
         <img src="images/tabsection.png" alt="Tab image">
+    </div>
+    <div class="tab-text">
+        <p class="tab-title">Get Started with your Almased Welcome Pack</p>
+        <p class="tab-description">Lorem ipsum dolor sit amet consectetur. Et aenean auctor pharetra risus vel vestibulum vel. Sed pellentesque nibh arcu risus eget massa.</p>
+        <button class="tab-shop-button">SHOP NOW</button>
     </div>
 </div>
 
@@ -165,11 +199,11 @@
       pausePlayBtn.addEventListener('click', () => {
         if (isPlaying) {
           glide.pause();
-          pausePlayBtn.textContent = '▶️';
+          pausePlayBtn.textContent = '▶';
           isPlaying = false;
         } else {
           glide.play();
-          pausePlayBtn.textContent = '⏸️';
+          pausePlayBtn.textContent = '||';
           isPlaying = true;
         }
       });
