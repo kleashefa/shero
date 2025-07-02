@@ -168,15 +168,34 @@
     </div>
     <div class="tab-image">
         <img src="images/tabsection.png" alt="Tab image">
-    </div>
-    <div class="tab-text">
         <p class="tab-title">Get Started with your Almased Welcome Pack</p>
         <p class="tab-description">Lorem ipsum dolor sit amet consectetur. Et aenean auctor pharetra risus vel vestibulum vel. Sed pellentesque nibh arcu risus eget massa.</p>
         <button class="tab-shop-button">SHOP NOW</button>
     </div>
 </div>
 
-<script src="https://unpkg.com/@glidejs/glide@3.6.0/dist/glide.min.js"></script>
+<div class="feature-container">
+    <div class="feature-icon">
+        <img src="images/feature-icon1.png" alt="Feature Icon" class="feature-icon">
+        <p class="feature-title">Liver detox, Metabolism & Weight Management</p>
+        <p class="feature-description">(Heart health, Cut appetite, Diabetes/Glp1)</p>
+    </div>
+    <div class="feature-icon">
+        <img src="images/feature-icon2.png" alt="Feature Icon" class="feature-icon">
+        <p class="feature-title">Beauty & Youth</p>
+        <p class="feature-description">Renewal of cells of Skin, Hair, Nails (Collagen production), HGH, biological age</p>
+    </div>
+    <div class="feature-icon">
+        <img src="images/feature-icon3.png" alt="Feature Icon" class="feature-icon">
+        <p class="feature-title">Muscle, Strength & Endurance</p>
+        <p class="feature-description">Workout performance</p>
+    </div>
+    <div class="feature-icon">
+        <img src="images/feature-icon4.png" alt="Feature Icon" class="feature-icon">
+        <p class="feature-title">Quick Nutritious meal shake</p>
+        <p class="feature-description">Boost energy, mental and physical performance for Busy lifestyles</p>
+    </div>
+</div>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -211,6 +230,20 @@
     } catch (error) {
       console.error('Glide initialization failed:', error);
     }
+
+    const tabButtons = document.querySelectorAll('.tab-button');
+    
+    if (tabButtons.length > 0) {
+      tabButtons[0].classList.add('active');
+    }
+    
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        
+        button.classList.add('active');
+      });
+    });
   });
 </script>
 </body>
