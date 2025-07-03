@@ -505,7 +505,54 @@ header.navbar {
     border: 2px solid transparent;
     transform: scale(1.05);
 }
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+}
 
+.feature-title1, .feature-title2, .feature-title3, .feature-title4 {
+    font-family: 'Playfair Display', serif;
+    color: #238014;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 10px 0 5px 0;
+    line-height: 1.2;
+}
+.feature-title1 {
+    margin-left: 65px;
+    margin-right: 65px;
+}
+.feature-title2 {
+    margin-left: 145px;
+    margin-right: 145px;
+}
+
+.feature-title3 {
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.feature-title4 {
+    margin-left: 85px;
+    margin-right: 85px;
+}
+
+.feature-description {
+    font-family: 'Jost', sans-serif;
+    color: #55AB26;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 25px 72px;
+    line-height: 1.3;
+}
 /* Medium screen adjustments - Gradual shrinking of hero stats */
 @media (max-width: 1200px) and (min-width: 1001px) {
     .hero-stats-container {
