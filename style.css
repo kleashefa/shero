@@ -529,22 +529,22 @@ header.navbar {
     line-height: 1.2;
 }
 .feature-title1 {
-    margin-left: 65px;
-    margin-right: 65px;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 .feature-title2 {
-    margin-left: 145px;
-    margin-right: 145px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .feature-title3 {
-    margin-left: 55px;
-    margin-right: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .feature-title4 {
-    margin-left: 85px;
-    margin-right: 85px;
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 .feature-description {
@@ -946,26 +946,26 @@ header.navbar {
     text-align: center;
     font-size: 15px;
     font-weight: 400;
-    margin: 10px 0 5px 0;
+    margin: 10px 0 10px 0;
     line-height: 1.2;
 }
 .feature-title1 {
-    margin-left: 1px;
-    margin-right: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 .feature-title2 {
-    margin-left: 55px;
-    margin-right: 55px;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 
 .feature-title3 {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .feature-title4 {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .feature-description {
