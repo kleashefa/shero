@@ -20,10 +20,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
-    <!--Swiper per Testimonial-->
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 </head>
 <body>
 <header class="navbar">
@@ -35,7 +31,6 @@
         <div class="logo-container">
             <img src="images/almasedLogo.png" alt="Almased logo" class="logo">
         </div>
-
 
         <div class="nav-wrapper" id="navWrapper">
 
@@ -199,30 +194,34 @@
 </div>
 
 <div class="testimonial-container">
-    <div class="glide glide-testimonials">
+    <div class="glide-testimonials">
         <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
                 <li class="glide__slide">
-                    <img src="images/gocaTestimonial.jpg" alt="Testimonial1" class="testimonial-image">
-                    <p class="testimonial-text">"The energy I started to have was unbelievable."</p>
-                    <p class="testimonial-author">- Stephanie S.</p>
+                    <img src="images/gocaTestimonial.png" alt="Testimonial1" class="testimonial-image">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"The energy I started to have was unbelievable."</p>
+                        <p class="testimonial-author">- Stephanie S.</p>
+                        <button class="testimonial-button">LEARN STEPHANIE'S STORY</button>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<" id="flipped">➜</button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">➜</button>
+                        </div>
+                    </div>
                 </li>
                 <li class="glide__slide">
-                    <img src="images/djaliTestimonial.jpg" alt="Testimonial2" class="testimonial-image">
-                    <p class="testimonial-text">"The best protein shake I've ever tried. It tastes great and keeps me full."</p>
-                    <p class="testimonial-author">- Emanuel J.</p>
+                    <img src="images/djaliTestimonial.png" alt="Testimonial2" class="testimonial-image">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"The best protein shake I've ever tried. It tastes great and keeps me full."</p>
+                        <p class="testimonial-author">- Emanuel J.</p>
+                        <button class="testimonial-button">LEARN EMANUEL'S STORY</button>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<" id="flipped">➜</button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">➜</button>
+                        </div>
+                    </div>
                 </li>
             </ul>
-        </div>
-        
-        <div class="glide__bullets" data-glide-el="controls[nav]">
-            <button class="glide__bullet" data-glide-dir="=0"></button>
-            <button class="glide__bullet" data-glide-dir="=1"></button>
-        </div>
-        
-        <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">‹</button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">›</button>
         </div>
     </div>
 </div>
@@ -283,16 +282,15 @@
       });
     });
 
-    // Initialize Glide for testimonials
+    // Initialize testimonial carousel
     try {
       const testimonialGlide = new Glide('.glide-testimonials', {
         type: 'carousel',
         perView: 1,
         gap: 0,
         bound: true,
-        autoplay: 3000,
-        animationDuration: 800,
-        hoverpause: true,
+        autoplay: false,
+        animationDuration: 1200,
         keyboard: true
       }).mount();
     } catch (error) {
