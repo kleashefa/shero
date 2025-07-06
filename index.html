@@ -226,6 +226,76 @@
     </div>
 </div>
 
+<!-- Health Benefits Section -->
+<div class="health-benefits__container">
+    <h2 class="health-benefits__title">Discover our daily health benefits</h2>
+
+    <div class="glide-health-benefits">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide">
+                    <div class="benefit-card" style="background-image: url('images/qeni2.jpg');">
+                        <button class="benefit-plus">+</button>
+                        <div class="benefit-content">
+                            <h3 class="benefit-title">Weight Loss</h3>
+                            <p class="benefit-description">Scientifically proven natural weight loss. Detoxes your liver from fat.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="benefit-card" style="background-image: url('images/GLP.webp');">
+                        <button class="benefit-plus">+</button>
+                        <div class="benefit-content">
+                            <h3 class="benefit-title">GLP-1 Support</h3>
+                            <p class="benefit-description">Scientifically proven to retain 100% muscle mass while losing weight.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="benefit-card" style="background-image: url('images/skin.png');">
+                        <button class="benefit-plus">+</button>
+                        <div class="benefit-content">
+                            <h3 class="benefit-title">Anti-aging (Skin, hair)</h3>
+                            <p class="benefit-description">Use Almased for life to reduce biological age. Feel and look younger with glowing skin and healthy hair.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="benefit-card" style="background-image: url('images/sport.jpg');">
+                        <button class="benefit-plus">+</button>
+                        <div class="benefit-content">
+                            <h3 class="benefit-title">Sports Performance</h3>
+                            <p class="benefit-description">Almased provides quick recovery any time while improving performance and energy levels.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="glide__bullets health-benefits-lines" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+        </div>
+
+        <div class="glide__arrows health-benefits-arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left health-arrow-left" data-glide-dir="<">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M5 12l5-5M5 12l5 5"/>
+                </svg>
+            </button>
+            <button class="glide__arrow glide__arrow--right health-arrow-right" data-glide-dir=">">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M19 12l-5-5M19 12l-5 5"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
 <script>
     const hamburger = document.getElementById("hamburger");
     const navWrapper = document.getElementById("navWrapper");
@@ -296,7 +366,63 @@
     } catch (error) {
       console.error('Testimonial Glide initialization failed:', error);
     }
-  });
+
+  try {
+            const testimonialGlide = new Glide('.glide-testimonials', {
+                type: 'carousel',
+                perView: 1,
+                gap: 0,
+                bound: true,
+                autoplay: false,
+                animationDuration: 1200,
+                keyboard: true
+            }).mount();
+        } catch (error) {
+            console.error('Testimonial Glide initialization failed:', error);
+        }
+
+        try {
+            const healthBenefitsGlide = new Glide('.glide-health-benefits', {
+                type: 'carousel',
+                perView: 5,
+                gap: 20,
+                bound: true,
+                autoplay: false,
+                animationDuration: 1200,
+                keyboard: true,
+                breakpoints: {
+                    1024: {
+                        perView: 4
+                    },
+                    768: {
+                        perView: 2
+                    }
+                }
+            });
+
+            // Mount the carousel
+            healthBenefitsGlide.mount();
+
+            // Add event listeners for the plus buttons
+            const plusButtons = document.querySelectorAll('.benefit-plus');
+            plusButtons.forEach(button => {
+                button.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    const card = this.closest('.benefit-card');
+                    const title = card.querySelector('.benefit-title').textContent;
+
+                    // You can add your custom logic here
+                    console.log('Plus button clicked for:', title);
+
+                    // Example: Toggle expanded state
+                    card.classList.toggle('expanded');
+                });
+            });
+
+        } catch (error) {
+            console.error('Health Benefits Glide initialization failed:', error);
+        }
+    });
 </script>
 
 <script src="https://unpkg.com/@glidejs/glide@3.6.0/dist/glide.min.js"></script>
