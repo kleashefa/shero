@@ -266,7 +266,7 @@ header.navbar {
 }
 
 .glide__bullet--active {
-  background-color:rgb(157, 156, 156) !important;
+  background-color: rgb(157, 156, 156) !important;
   transform: scaleY(1.5);
 }
 
@@ -1283,7 +1283,6 @@ header.navbar {
   transform: translateX(-50%);
   display: flex;
   gap: 20px;
-  
 }
 /* Shigjetat */
 
@@ -1308,6 +1307,122 @@ header.navbar {
   background-color: #55ab26;
   color: white;
 }
+.stat-text {
+  font-family: "IBM Plex Sans", serif;
+  font-size: clamp(2.5rem, 4vw, 3.75rem);
+  font-weight: 300;
+  color: #55ab26;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.prod-description {
+  font-family: "Jost", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: black;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 20px;
+}
+
+.stats-animation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #238014;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.stats-item {
+  position: relative;
+  border: 1px solid #55ab25;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 1.5rem;
+  aspect-ratio: 1/1;
+  width: 100%;
+  max-width: 290px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.percentage {
+  position: absolute;
+  top: 27%;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  color: #55ab25;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.profit {
+  position: absolute;
+  top: 50%;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.875rem, 1.5vw, 2rem);
+  color: #55ab25;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 140px;
+}
+.stats-button {
+  font-family: "Jost", sans-serif;
+  font-weight: 450;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #ffffff;
+  background-color: #55ab26;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.stats-button:hover {
+  cursor: pointer;
+  background-color: #54ab25b4;
+  border: 1px solid transparent;
+  transform: scale(1.05);
+}
+.proof-text {
+  font-family: "Jost", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 400;
+  color: #55ab26;
+  text-align: center;
+  padding-top: 30px;
+}
+.uni-image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.proof {
+  background-color: rgba(249, 241, 117, 1);
+}
 
 @media (max-width: 1024px) {
   .health-benefits__title {
@@ -1315,7 +1430,6 @@ header.navbar {
     margin-bottom: 40px;
   }
 }
-
 @media (max-width: 768px) {
   .health-benefits__title {
     font-size: 32px;
@@ -1328,6 +1442,15 @@ header.navbar {
 
   .benefit-description {
     font-size: 13px;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .stats-item {
+    max-width: 200px;
+    padding: 1rem;
   }
 }
 
@@ -1348,5 +1471,18 @@ header.navbar {
 
   .benefit-content {
     padding: 20px;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .stats-item {
+    max-width: 160px;
+    padding: 0.8rem;
+  }
+
+  .profit {
+    max-width: 120px;
   }
 }
