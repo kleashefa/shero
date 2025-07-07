@@ -226,7 +226,6 @@
     </div>
 </div>
 
-<!-- Health Benefits Section -->
 <div class="health-benefits__container">
     <h2 class="health-benefits__title">Discover our daily health benefits</h2>
 
@@ -291,137 +290,41 @@
     </div>
 </div>
 
+<div class="stats-animation">
+    <div class="stat-text">The Global Leader in Metabolic Health</div>
+
+    <div class="stats-grid">
+        <div class="stats-item">
+            <span class="percentage">100%</span>
+            <span class="profit">muscle mass preservation</span>
+        </div>
+        <div class="stats-item">
+            <span class="percentage">113%</span>
+            <span class="profit">more weight loss than low-fat diet</span>
+        </div>
+        <div class="stats-item">
+            <span class="percentage">86%</span>
+            <span class="profit">more fat loss</span>
+        </div>
+        <div class="stats-item">
+            <span class="percentage">258%</span>
+            <span class="profit">more waist reduction</span>
+        </div>
+    </div>
+
+    <div class="prod-description">No other protein compares to Almased. From balanced blood sugar to a better metabolism, Almased has been shown in peer-reviewed studies to have numerous health benefits.</div>
+    <div class="stats-button-container">
+        <button class="stats-button">See our research studies →</button>
+    </div>
+</div>
+
+<div class="proof">
+    <div class="proof-text">Proven Results from 32 University backed Studies on Almased</div> 
+    <img src="images/uni.png" alt="Doctor Image" class="uni-image">   
+</div>
 
 
-<script>
-    const hamburger = document.getElementById("hamburger");
-    const navWrapper = document.getElementById("navWrapper");
-
-    hamburger.addEventListener("click", () => {
-        navWrapper.classList.toggle("active");
-        document.body.style.overflow = navWrapper.classList.contains("active") ? 'hidden' : 'auto';
-    });
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    try {
-      const glide = new Glide('.glide', {
-        type: 'carousel',
-        perView: 1,
-        gap: 0,
-        bound: true,
-        autoplay: 2000,  
-        animationDuration: 1200,
-        hoverpause: true,
-        keyboard: true
-      }).mount();
-
-      // Pause/Play functionality
-      const pausePlayBtn = document.getElementById('pausePlayBtn');
-      let isPlaying = true;
-
-      pausePlayBtn.addEventListener('click', () => {
-        if (isPlaying) {
-          glide.pause();
-          pausePlayBtn.textContent = '▶';
-          isPlaying = false;
-        } else {
-          glide.play();
-          pausePlayBtn.textContent = '||';
-          isPlaying = true;
-        }
-      });
-
-    } catch (error) {
-      console.error('Glide initialization failed:', error);
-    }
-
-    const tabButtons = document.querySelectorAll('.tab-button');
-    if (tabButtons.length > 0) {
-      tabButtons[0].classList.add('active');
-    }
-    tabButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        tabButtons.forEach(btn => btn.classList.remove('active'));
-        
-        button.classList.add('active');
-      });
-    });
-
-    // Initialize testimonial carousel
-    try {
-      const testimonialGlide = new Glide('.glide-testimonials', {
-        type: 'carousel',
-        perView: 1,
-        gap: 0,
-        bound: true,
-        autoplay: false,
-        animationDuration: 1200,
-        keyboard: true
-      }).mount();
-    } catch (error) {
-      console.error('Testimonial Glide initialization failed:', error);
-    }
-
-  try {
-            const testimonialGlide = new Glide('.glide-testimonials', {
-                type: 'carousel',
-                perView: 1,
-                gap: 0,
-                bound: true,
-                autoplay: false,
-                animationDuration: 1200,
-                keyboard: true
-            }).mount();
-        } catch (error) {
-            console.error('Testimonial Glide initialization failed:', error);
-        }
-
-        try {
-            const healthBenefitsGlide = new Glide('.glide-health-benefits', {
-                type: 'carousel',
-                perView: 5,
-                gap: 20,
-                bound: true,
-                autoplay: false,
-                animationDuration: 1200,
-                keyboard: true,
-                breakpoints: {
-                    1024: {
-                        perView: 4
-                    },
-                    768: {
-                        perView: 2
-                    }
-                }
-            });
-
-            // Mount the carousel
-            healthBenefitsGlide.mount();
-
-            // Add event listeners for the plus buttons
-            const plusButtons = document.querySelectorAll('.benefit-plus');
-            plusButtons.forEach(button => {
-                button.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    const card = this.closest('.benefit-card');
-                    const title = card.querySelector('.benefit-title').textContent;
-
-                    // You can add your custom logic here
-                    console.log('Plus button clicked for:', title);
-
-                    // Example: Toggle expanded state
-                    card.classList.toggle('expanded');
-                });
-            });
-
-        } catch (error) {
-            console.error('Health Benefits Glide initialization failed:', error);
-        }
-    });
-</script>
-
+<script src="scripts.js"></script>
 <script src="https://unpkg.com/@glidejs/glide@3.6.0/dist/glide.min.js"></script>
 </body>
 </html>
