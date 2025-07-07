@@ -266,7 +266,7 @@ header.navbar {
 }
 
 .glide__bullet--active {
-  background-color: #ffee00 !important;
+  background-color:rgb(157, 156, 156) !important;
   transform: scaleY(1.5);
 }
 
@@ -1181,7 +1181,7 @@ header.navbar {
 }
 
 .benefit-card {
-  height: 550px;
+  height: 650px;
   border-radius: 12px;
   position: relative;
   background-size: cover;
@@ -1225,6 +1225,7 @@ header.navbar {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
+  height: 158px;
   opacity: 1;
 }
 
