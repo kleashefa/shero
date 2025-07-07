@@ -1,3 +1,4 @@
+//Funksionalitet hamburger menu
 const hamburger = document.getElementById("hamburger");
 const navWrapper = document.getElementById("navWrapper");
 
@@ -8,6 +9,7 @@ hamburger.addEventListener("click", () => {
     : "auto";
 });
 
+//Karusel per hero-banner
 document.addEventListener("DOMContentLoaded", () => {
   try {
     const glide = new Glide(".glide", {
@@ -40,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.error("Glide initialization failed:", error);
   }
 
+  //Funksionalitet per tab buttons
   const tabButtons = document.querySelectorAll(".tab-button");
   if (tabButtons.length > 0) {
     tabButtons[0].classList.add("active");
@@ -52,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Karusel per testimonials
   try {
     const testimonialGlide = new Glide(".glide-testimonials", {
       type: "carousel",
@@ -66,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.error("Testimonial Glide initialization failed:", error);
   }
 
+  // Karusel per health benefits
   try {
     const healthBenefitsGlide = new Glide(".glide-health-benefits", {
       type: "carousel",
@@ -84,11 +89,9 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       },
     });
-
-    // Mount the carousel
     healthBenefitsGlide.mount();
 
-    // Add event listeners for the plus buttons
+    // Event listeners for the plus buttons
     const plusButtons = document.querySelectorAll(".benefit-plus");
     plusButtons.forEach((button) => {
       button.addEventListener("click", function (e) {
@@ -96,15 +99,28 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = this.closest(".benefit-card");
         const title = card.querySelector(".benefit-title").textContent;
 
-        // You can add your custom logic here
         console.log("Plus button clicked for:", title);
 
-        // Example: Toggle expanded state
         card.classList.toggle("expanded");
       });
     });
   } catch (error) {
     console.error("Health Benefits Glide initialization failed:", error);
+  }
+
+  //Karusel per testimonials
+  try {
+    const testimonialGlide = new Glide(".glide-testimonials", {
+      type: "carousel",
+      perView: 1,
+      gap: 0,
+      bound: true,
+      autoplay: false,
+      animationDuration: 1200,
+      keyboard: true,
+    }).mount();
+  } catch (error) {
+    console.error("Testimonial Glide initialization failed:", error);
   }
 
   try {
@@ -120,4 +136,63 @@ document.addEventListener("DOMContentLoaded", () => {
   } catch (error) {
     console.error("Testimonial Glide initialization failed:", error);
   }
+
+  // Karusel per doctor quotes
+  try {
+    const doctorQuotesGlide = new Glide(".glide-doctor-quotes", {
+      type: "carousel",
+      perView: 1,
+      gap: 0,
+      bound: true,
+      autoplay: false,
+      animationDuration: 1200,
+      keyboard: true,
+    });
+    doctorQuotesGlide.mount();
+
+    //Doctor name navigation buttons
+    const doctorNavBtns = document.querySelectorAll(".doctor-nav-btn");
+
+    doctorNavBtns.forEach((btn, index) => {
+      btn.addEventListener("click", function () {
+        //Goes to the corresponding slide
+        doctorQuotesGlide.go(`=${index}`);
+      });
+    });
+
+    //Active state on slide change
+    doctorQuotesGlide.on("move", function () {
+      const currentIndex = doctorQuotesGlide.index;
+
+      //Update active button
+      doctorNavBtns.forEach((btn, index) => {
+        if (index === currentIndex) {
+          btn.classList.add("active");
+        } else {
+          btn.classList.remove("active");
+        }
+      });
+    });
+  } catch (error) {
+    console.error("Doctor quotes carousel initialization failed:", error);
+  }
+
+  const recipesGlide = new Glide(".glide-recipes", {
+    type: "carousel",
+    perView: 3,
+    gap: 20,
+    bound: true,
+    autoplay: false,
+    animationDuration: 1200,
+    keyboard: true,
+    breakpoints: {
+      1024: {
+        perView: 3,
+      },
+      768: {
+        perView: 2,
+      },
+    },
+  });
+  recipesGlide.mount();
 });
