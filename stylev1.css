@@ -53,6 +53,7 @@ header.navbar {
   align-items: center;
   box-sizing: border-box;
   padding-left: 50px;
+  padding-top: 35px;
 }
 .button,
 .store-button, 
@@ -74,6 +75,16 @@ header.navbar {
   transition: 0.4s ease;
   box-sizing: border-box;
 }
+
+.store-button {
+  margin-left: 8px;
+  padding-top: 10px;
+  border-radius: 25px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
 .button:hover,
 .store-button:hover,
 .signup-button:hover {
@@ -96,12 +107,15 @@ header.navbar {
 .goals-container,
 .usage-container,
 .learn-container {
+  padding-top: 35px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+
+
 .shop,
 .about,
 .science,
@@ -111,7 +125,7 @@ header.navbar {
 .learn {
   position: relative;
   display: inline-block;
-  font-family: "Gill Sans", "Gill Sans Nova", "Trebuchet MS", sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #000000;
@@ -170,6 +184,7 @@ header.navbar {
 .user-container,
 .cart-container {
   position: relative;
+  padding-top: 35px;
   box-sizing: border-box;
 }
 .search-container {
@@ -504,7 +519,7 @@ header.navbar {
   top: 23%;
   left: 23%;
   transform: translateX(-50%);
-  width: 40%;
+  width: 35%;
   font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #238014;
   font-weight: 300;
@@ -517,7 +532,7 @@ header.navbar {
   top: 50%;
   left: 23%;
   transform: translateX(-50%);
-  width: 35%;
+  width: 28%;
   font-family: "Jost", sans-serif;
   color: #55ab26;
   font-weight: 400;
@@ -703,7 +718,7 @@ header.navbar {
 /* Health Benefits */
 .health-benefits__container {
   background-color: #f5f2ed;
-  padding: 60px 20px 120px 20px;
+  padding: 60px 20px 190px 20px;
   overflow: hidden;
 }
 
@@ -751,6 +766,7 @@ header.navbar {
   width: 50px;
   height: 50px;
   font-size: 30px;
+  padding: 30px;
   background-color: #55ab26;
   color: white;
   border: none;
@@ -833,7 +849,7 @@ header.navbar {
 
 .health-benefits-arrows {
   position: absolute;
-  bottom: -100px;
+  bottom: -120px;
   right: -50px;
   transform: translateX(-50%);
   display: flex;
@@ -843,8 +859,8 @@ header.navbar {
 
 .health-arrow-left,
 .health-arrow-right {
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
   font-size: 30px;
   border: 2px solid #55ab26;
   border-radius: 50%;
@@ -859,7 +875,7 @@ header.navbar {
 
 .health-arrow-left:hover,
 .health-arrow-right:hover {
-  background-color: #55ab26;
+  background-color: #238014;
   color: white;
 }
 .stat-text,
@@ -877,12 +893,12 @@ header.navbar {
 }
 .prod-description {
   font-family: "Jost", sans-serif;
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: 27px;
   color: black;
   text-align: center;
   line-height: 1.5;
-  max-width: 800px;
-  margin: 20px;
+  max-width: 1100px;
+  margin: 25px;
 }
 
 .stats-animation {
@@ -929,7 +945,7 @@ header.navbar {
   position: absolute;
   top: 27%;
   font-family: "Jost", sans-serif;
-  font-weight: 500;
+  font-weight: 800;
   font-size: clamp(2.5rem, 4vw, 4rem);
   color: #55ab25;
   text-align: center;
@@ -969,9 +985,10 @@ header.navbar {
   font-family: "Jost", sans-serif;
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 400;
-  color: #55ab26;
+  color: #238014;
   text-align: center;
   padding-top: 30px;
+  margin-top: 60px;
 }
 .uni-image {
   align-items: center;
@@ -1028,7 +1045,7 @@ header.navbar {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   font-weight: 300;
-  color: #55ab26;
+  color: #238014;
   line-height: 1.3;
   margin: 0 0 5px 0;
 }
