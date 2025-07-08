@@ -54,7 +54,9 @@ header.navbar {
   box-sizing: border-box;
   padding-left: 50px;
 }
-.button, .store-button {
+.button,
+.store-button, 
+.signup-button {
   font-family: "Jost", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -72,7 +74,9 @@ header.navbar {
   transition: 0.4s ease;
   box-sizing: border-box;
 }
-.button:hover, .store-button:hover {
+.button:hover,
+.store-button:hover,
+.signup-button:hover {
   cursor: pointer;
   background-color: #54ab25b4;
   border: 1px solid transparent;
@@ -739,7 +743,8 @@ header.navbar {
 }
 
 /* Plus-i */
-.benefit-plus, .recipe-plus {
+.benefit-plus,
+.recipe-plus {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -764,7 +769,8 @@ header.navbar {
   border-radius: 50%;
 }
 
-.benefit-plus:hover, .recipe-plus:hover {
+.benefit-plus:hover,
+.recipe-plus:hover {
   transform: scale(1.1);
 }
 
@@ -856,11 +862,12 @@ header.navbar {
   background-color: #55ab26;
   color: white;
 }
-.stat-text, .recipes-title {
+.stat-text,
+.recipes-title {
   font-family: "IBM Plex Sans", serif;
   font-size: clamp(2.5rem, 4vw, 3rem);
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 120px;
+  padding-right: 120px;
   font-weight: 300;
   color: #238014;
   text-align: center;
@@ -980,8 +987,9 @@ header.navbar {
 .doctor-quotes-container {
   margin-top: 100px;
   margin-bottom: 100px;
-  margin-left: 190px;
-  margin-right: 130px;
+  width: 79%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #f3ece1;
   position: relative;
   overflow: hidden;
@@ -996,13 +1004,10 @@ header.navbar {
 
 .doctor-quote-slide {
   display: flex;
-
   gap: 60px;
-  padding: 0;
 }
 
 .doctor-image {
-  flex: 0 0 400px;
   height: 500px;
   overflow: hidden;
 }
@@ -1081,7 +1086,7 @@ header.navbar {
 .doctor-names-nav {
   position: absolute;
   top: 85%;
-  right: 20%;
+  right: 15%;
 }
 
 .doctor-nav-btn {
@@ -1157,7 +1162,50 @@ header.navbar {
   height: auto;
 }
 
+.newsletter-container {
+  background-color: rgba(213, 231, 185, 1);
+  padding: 60px 220px 80px 220px;
+  
+}
 
+.newsletter-title {
+  font-family: "IBM Plex Sans", serif;
+  font-size: 30px;
+  color: #238014;
+  font-weight: 300;
+}
+
+.newsletter-description {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 40px;
+  color: #238014;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.email-input {
+  width: 100%;
+  max-width: 935px;
+  padding: 10px;
+  font-size: 20px;
+  color: #238014;
+  border: 2px solid #55ab26;
+  border-radius: 30px;
+  margin-top: 10px;
+  padding-left: 15px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.email-input::placeholder {
+  color: #238014;
+  opacity: 0.9;
+}
+
+.email-input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
 /*Gradual shrinking*/
 @media (max-width: 1200px) and (min-width: 1001px) {
   .hero-stats-container {
@@ -1635,7 +1683,7 @@ header.navbar {
     font-size: 32px;
   }
 
-  .doctor-nav-btn{
+  .doctor-nav-btn {
     display: none;
   }
 }
@@ -1678,7 +1726,7 @@ header.navbar {
     font-size: 24px;
   }
 
-  .doctor-nav-btn{
+  .doctor-nav-btn {
     display: none;
   }
 }
@@ -1727,7 +1775,7 @@ header.navbar {
     height: 40px;
   }
 
-  .doctor-nav-btn{
+  .doctor-nav-btn {
     display: none;
   }
 }
