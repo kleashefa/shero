@@ -745,10 +745,10 @@ header.navbar {
   right: 20px;
   width: 50px;
   height: 50px;
+  font-size: 30px;
   background-color: #55ab26;
   color: white;
   border: none;
-  font-size: 30px;
   cursor: pointer;
   transition: transform 0.3s ease;
   display: flex;
@@ -862,7 +862,7 @@ header.navbar {
   padding-left: 60px;
   padding-right: 60px;
   font-weight: 300;
-  color: #55ab26;
+  color: #238014;
   text-align: center;
   margin-bottom: 2rem;
   width: 100%;
@@ -939,7 +939,7 @@ header.navbar {
   color: #55ab25;
   text-align: center;
   line-height: 1.5;
-  max-width: 140px;
+  max-width: 190px;
 }
 .stats-button {
   font-family: "Jost", sans-serif;
@@ -1067,6 +1067,7 @@ header.navbar {
   align-items: center;
   justify-content: center;
   pointer-events: all;
+  font-size: 30px;
 }
 
 .doctor-arrow-left:hover,
