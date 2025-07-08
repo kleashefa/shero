@@ -200,7 +200,9 @@
                 <li class="glide__slide">
                     <img src="images/gocaTestimonial.png" alt="Testimonial1" class="testimonial-image">
                     <div class="testimonial-content">
-                        <p class="testimonial-text">❝The energy I started to have was unbelievable. ❞</p>
+                        <p class="quotation-left">❝</p>
+                        <p class="testimonial-text">The energy I started to have was unbelievable.</p>
+                        <p class="quotation-right2">❞</p>
                         <p class="testimonial-author">– Stephanie S.</p>
                         <button class="testimonial-button">LEARN STEPHANIE'S STORY</button>
                         <div class="glide__arrows" data-glide-el="controls">
@@ -212,12 +214,14 @@
                 <li class="glide__slide">
                     <img src="images/djaliTestimonial.png" alt="Testimonial2" class="testimonial-image">
                     <div class="testimonial-content">
-                        <p class="testimonial-text">❝The best protein shake I've ever tried. ❞</p>
+                        <p class="quotation-left">❝</p>
+                        <p class="testimonial-text">The energy I started to have was unbelievable.</p>
+                        <p class="quotation-right2">❞</p>
                         <p class="testimonial-author">– Emanuel J.</p>
                         <button class="testimonial-button">LEARN EMANUEL'S STORY</button>
                         <div class="glide__arrows" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">⟵</button>
-                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">⟶</button>
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<" id="flipped">➜</button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">➜</button>
                         </div>
                     </div>
                 </li>
@@ -333,7 +337,9 @@
                             <img src="images/doctor.png" alt="Dr Eric J Rosenbaum">
                         </div>
                         <div class="quote-content">
-                            <p class="quote-text">❝If you are on GLP-1s, its important to supplement with Almased so you maintain muscle while still both losing weight and losing fat. ❞</p>
+                            <p class="quotation-left">❝</p>
+                            <p class="quote-text">If you are on GLP-1s, its important to supplement with Almased so you maintain muscle while still both losing weight and losing fat.</p>
+                            <p class="quotation-right">❞</p>
                             <div class="quote-signature">
                                 <img src="images/firma.png" alt="Signature">
                             </div>
@@ -347,7 +353,9 @@
                             <img src="images/doctorF.jpg" alt="Dr Aloys Berg">
                         </div>
                         <div class="quote-content">
-                            <p class="quote-text">❝Almased provides nutritional support for anyone looking to optimize their metabolic health and achieve sustainable weight loss. ❞</p>
+                            <p class="quotation-left">❝</p>
+                            <p class="quote-text">If you are on GLP-1s, its important to supplement with Almased so you maintain muscle while still both losing weight and losing fat.</p>
+                            <p class="quotation-right">❞</p>
                             <div class="quote-signature">
                                 <img src="images/firma.png" alt="Signature">
                             </div>
@@ -425,53 +433,55 @@
 </div>
 
 <footer class="footer">
-    <div class="footer-logo">
-      <img src="images/almasedFooter.png" alt="Almased Logo" />
-    </div>
     <div class="footer-content">
       <div class="footer-links">
         <div class="footer-column">
-          <h4>Shop Products</h4>
-          <ul>
-            <li>Why it works</li>
-            <li>How to use</li>
-            <li>Life-Changing Results</li>
-          </ul>
+            <div class="footer-logo">
+                <img src="images/almasedFooter.png" alt="Almased Logo" />
+              </div>
+        </div>
+        <div class="footer-column">
+            <ul class="footer-info">
+            <h4><a href="#">Products</a></h4>
+            <li><a href="#">Why it works</a></li>
+            <li><a href="#">How to use</a></li>
+            <li><a href="#">Life-Changing Results</a></li>
+            </ul>
         </div>
         <div class="footer-column">
           <h4>Blog</h4>
           <ul>
-            <li>All Blogs</li>
-            <li>Almased 101</li>
-            <li>Weight Loss</li>
-            <li>Metabolism</li>
-            <li>Diabetes</li>
-            <li>Meal Recipes</li>
-            <li>Muscle Building Shake Recipes</li>
-            <li>Weight Loss Shake Recipes</li>
-            <li>Diabetic-Friendly Shake Recipes</li>
+            <li><a href="#">All Blogs</a></li>
+            <li><a href="#">Almased 101</a></li>
+            <li><a href="#">Weight Loss</a></li>                
+            <li><a href="#">Metabolism</a></li>
+            <li><a href="#">Diabetes</a></li>
+            <li><a href="#">Meal Recipes</a></li>
+            <li><a href="#">Muscle Building Shake Recipes</a></li>
+            <li><a href="#">Weight Loss Shake Recipes</a></li>
+            <li><a href="#">Diabetic-Friendly Shake Recipes</a></li>
           </ul>
         </div>
         <div class="footer-column">
           <h4>Resources</h4>
           <ul>
-            <li>FAQ</li>
-            <li>Type Test</li>
-            <li>BMI calculator</li>
-            <li>Almased Lexicon</li>
-            <li>Community</li>
-            <li>Newsletter</li>
-          </ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Type Test</a></li>
+            <li><a href="#">BMI calculator</a></li>
+            <li><a href="#">Almased Lexicon</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Newsletter</a></li>
+        </ul>
         </div>
         <div class="footer-column">
           <h4>About us</h4>
           <ul>
-            <li>Our Story</li>
-            <li>Our Vision</li>
-            <li>Research</li>
-            <li>Our Team</li>
-            <li>Press</li>
-          </ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Our Vision</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Press</a></li>
+        </ul>
         </div>
       </div>
     </div>
