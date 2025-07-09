@@ -1,0 +1,98 @@
+.store-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .stores-title {
+    font-family: "IBM Plex Sans", serif;
+    font-size: 30px;
+    color: #238014;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .store-logos {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  
+  .store-button {
+    margin-bottom: 30px;
+  }
+  
+  .awards {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .newsletter-container {
+    background-color: rgba(213, 231, 185, 1);
+    padding: 60px 220px 80px 220px;
+  }
+  
+  .newsletter-title {
+    font-family: "IBM Plex Sans", serif;
+    font-size: 30px;
+    color: #238014;
+    font-weight: 300;
+  }
+  
+  .newsletter-description {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 40px;
+    color: #238014;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+  
+  .email-input {
+    width: 100%;
+    max-width: 836px;
+    padding: 10px;
+    font-size: 20px;
+    color: #238014;
+    border: 2px solid #55ab26;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-right: 2px;
+    padding-left: 15px;
+    background-color: transparent;
+    box-sizing: border-box;
+  }
+  
+  .email-input::placeholder {
+    color: #238014;
+    opacity: 0.9;
+  }
+  
+  .email-input:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+
+  .store-button {
+    margin-left: 8px;
+    padding-top: 10px;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  
+  .signup-button {
+    margin-left: 8px;
+    padding-top: 10px;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
