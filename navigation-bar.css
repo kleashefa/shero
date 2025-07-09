@@ -1,0 +1,205 @@
+header.navbar {
+    width: 100vw !important;
+    overflow-x: hidden;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+  }
+  
+  .nav-wrapper {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    height: 140px;
+    position: relative;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 8px;
+    height: auto;
+    padding: 0;
+  }
+  .logo {
+    position: static;
+    box-sizing: border-box;
+    object-fit: contain;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-top: 35px;
+  }
+  .button,
+  .store-button,
+  .signup-button {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 20px;
+    letter-spacing: 0.8px;
+    align-items: center;
+    border: 1px solid #55ab25;
+    background-color: #55ab25;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: background-color 0.4s ease, border 0.4s ease, color 0.4s ease;
+    transition: 0.4s ease;
+    box-sizing: border-box;
+  }
+
+.button:hover,
+.store-button:hover,
+.signup-button:hover {
+  cursor: pointer;
+  background-color: #54ab25b4;
+  border: 1px solid transparent;
+  transform: scale(1.05);
+}
+.nav-sections {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+.about-container,
+.science-container,
+.results-container,
+.goals-container,
+.usage-container,
+.learn-container {
+  padding-top: 35px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.shop,
+.about,
+.science,
+.results,
+.goals,
+.usage,
+.learn {
+  position: relative;
+  display: inline-block;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  line-height: 100%;
+  letter-spacing: 0.65px;
+  box-sizing: border-box;
+}
+.shop::after,
+.about::after,
+.science::after,
+.results::after,
+.goals::after,
+.usage::after,
+.learn::after {
+  content: "";
+  position: absolute;
+  align-items: center;
+  width: 0;
+  height: 2px;
+  background-color: #55ab25;
+  left: 50%;
+  bottom: -2px;
+  transition: width 0.4s ease;
+  transform: translateX(-50%);
+}
+.shop:hover,
+.about:hover,
+.science:hover,
+.results:hover,
+.goals:hover,
+.usage:hover,
+.learn:hover {
+  cursor: pointer;
+  color: #55ab25;
+}
+.shop:hover::after,
+.about:hover::after,
+.science:hover::after,
+.results:hover::after,
+.goals:hover::after,
+.usage:hover::after,
+.learn:hover::after {
+  width: 100%;
+  left: 50%;
+}
+.icons {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  padding-right: 50px;
+}
+.search-container,
+.user-container,
+.cart-container {
+  position: relative;
+  padding-top: 35px;
+  box-sizing: border-box;
+}
+.search-container {
+  padding-left: 10px;
+}
+
+.search-icon,
+.user-icon,
+.cart-icon {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.search-icon:hover,
+.user-icon:hover,
+.cart-icon:hover {
+  cursor: pointer;
+  transform: scale(1.17);
+  filter: brightness(0.8);
+}
+.hamburger {
+  display: none;
+  overflow: hidden;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 1;
+  text-align: center;
+  user-select: none;
+}
+.hamburger:hover {
+  cursor: pointer;
+  filter: brightness(0.2);
+}

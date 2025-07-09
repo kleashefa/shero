@@ -1,0 +1,286 @@
+/* Health Benefits */
+.health-benefits__container {
+    background-color: #f5f2ed;
+    padding: 60px 20px 190px 20px;
+    overflow: hidden;
+  }
+  
+  .health-benefits__title {
+    text-align: center;
+    font-family: "IBM Plex Sans", serif;
+    font-size: 60px;
+    color: #238014;
+    font-weight: 300;
+  }
+  
+  /* Card Carousel */
+  .glide-health-benefits {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .glide-health-benefits .glide__track {
+    margin-right: -50vw;
+    padding-right: 50vw;
+  }
+  
+  .benefit-card {
+    height: 650px;
+    border-radius: 12px;
+    position: relative;
+    background-size: cover;
+  
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    background-color: #e0e0e0;
+  }
+  
+  /* Plus-i */
+  .benefit-plus,
+  .recipe-plus {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    background-color: #55ab26;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+  }
+  .benefit-plus {
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 40px;
+  }
+  
+  .recipe-plus {
+    border-radius: 50%;
+    font-size: 30px;
+  }
+  
+  .benefit-plus:hover,
+  .recipe-plus:hover {
+    transform: scale(1.1);
+  }
+  
+  .benefit-content {
+    background-color: #55ab26;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: 158px;
+    opacity: 1;
+  }
+  
+  .benefit-title {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .benefit-description {
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+  
+  /* Vijat */
+  .health-benefits-lines {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    height: 4px;
+    z-index: 2;
+  }
+  
+  .glide-health-benefits .glide__bullets {
+    position: absolute;
+    bottom: -30px;
+  }
+  
+  .health-benefits-lines .glide__bullet {
+    flex: 1;
+    height: 100%;
+    padding: 0;
+    border: none;
+    background-color: rgba(74, 124, 89, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+  }
+  
+  .health-benefits-lines .glide__bullet:hover {
+    background-color: rgba(74, 124, 89, 0.4);
+  }
+  
+  .health-benefits-lines .glide__bullet.glide__bullet--active {
+    background-color: white;
+  }
+  
+  .health-benefits-arrows {
+    position: absolute;
+    bottom: -120px;
+    right: -50px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Shigjetat */
+  .health-arrow-left,
+  .health-arrow-right {
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+    border: 2px solid #55ab26;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #55ab26;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .health-arrow-left:hover,
+  .health-arrow-right:hover {
+    background-color: #238014;
+    color: white;
+  }
+  .stat-text,
+  .recipes-title {
+    font-family: "IBM Plex Sans", serif;
+    font-size: clamp(2.5rem, 4vw, 3rem);
+    padding-left: 120px;
+    padding-right: 120px;
+    font-weight: 300;
+    color: #238014;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .prod-description {
+    font-family: "Jost", sans-serif;
+    font-size: 27px;
+    color: black;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 1100px;
+    margin: 25px;
+  }
+  
+  .stats-animation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #238014;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  /* Stats Section */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .stats-item {
+    position: relative;
+    border: 1px solid #55ab25;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    padding: 1.5rem;
+    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 290px;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .percentage {
+    position: absolute;
+    top: 27%;
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    color: #55ab25;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profit {
+    position: absolute;
+    top: 50%;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: clamp(0.875rem, 1.5vw, 2rem);
+    color: #55ab25;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 190px;
+  }
+  .stats-button {
+    font-family: "Jost", sans-serif;
+    font-weight: 450;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: #ffffff;
+    background-color: #55ab26;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .stats-button:hover {
+    cursor: pointer;
+    background-color: #54ab25b4;
+    border: 1px solid transparent;
+    transform: scale(1.05);
+  }
+
+  /* Recipes Section */
+.recipes-container {
+  background-color: #f5f2ed;
+  padding: 60px 50px 120px 50px;
+  overflow: hidden;
+}
+
+.recipe-description {
+  font-family: "Jost", sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: flex-start;
+  line-height: 1.5;
+  max-width: 350px;
+  margin: 20px auto;
+}
