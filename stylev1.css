@@ -165,7 +165,7 @@ body {
     font-size: 26px;
     cursor: pointer;
     padding: 20px;
-    padding-top: 30px;
+    padding-top: 40px;
     z-index: 2000;
   }
   .button-container {
@@ -231,7 +231,9 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 0;
+    margin-top: 10px;
+    margin-right: -70px;
+    margin-left: 140px;
     position: relative;
     z-index: 1100;
   }
@@ -254,7 +256,7 @@ body {
   .logo {
     position: absolute;
     padding-bottom: 0;
-    padding-left: 35px;
+    margin-left: 185px;
   }
   .nav-container {
     display: flex;
@@ -275,7 +277,7 @@ body {
     padding-top: 10px;
   }
   .hero-text {
-    top: 45%;
+    top: 40%;
     left: 50%;
     width: 90vw;
     text-align: center;
@@ -284,11 +286,11 @@ body {
   .natural,
   .super,
   .protein {
-    font-size: 50px;
+    font-size: 55px;
     line-height: 0.4;
   }
   .small-text {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 0.4;
   }
   .hero-button-container {
@@ -307,13 +309,13 @@ body {
     transform: none;
     display: flex;
     justify-content: center;
-    gap: 7px;
+    gap: 10px;
     width: 100%;
     margin-top: 20px;
   }
   .hero-stats-item {
-    width: 83px;
-    height: 83px;
+    width: 120px;
+    height: 120px;
     border: 2px solid #ffffff;
   }
   .mass {
@@ -428,7 +430,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 2px;
-    width: 50%;
+    width: 45%;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
@@ -437,10 +439,12 @@ body {
   }
 
   .testimonial-text {
+    display: none;
+  }
+  .testimonial-text-small {
     font-size: 22px;
-    line-height: 1.4;
-    margin-bottom: 14px;
-    color: #238014;
+    line-height: 1.2;
+    width: 100%;
   }
 
   .testimonial-author {
@@ -476,9 +480,88 @@ body {
     color: #55ab26;
     cursor: pointer;
   }
+
+  .health-benefits-arrows {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -90px;
+  }
+  .health-benefits-lines { 
+    gap: 12px; 
+  }
+
+  .health-benefits-arrows {
+    position: absolute;
+    bottom: -120px;
+    right: 5%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+  }
+
+  .health-arrow-left,
+  .health-arrow-right {
+    width: 60px;
+    height: 60px;
+
+  }
+  .health-arrow-left,
+  .health-arrow-right,
+  .doctor-arrow-left,
+  .doctor-arrow-right {
+    
+    font-size: 30px;
+    border: 2px solid #55ab26;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #55ab26;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .health-arrow-left:hover,
+  .health-arrow-right:hover {
+    background-color: #238014;
+    color: white;
+  }
+
+  .stats-grid {
+    gap: 5px;
+    display: flexbox;
+    align-items: flex-end;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  .stats-item { 
+    left:-5%;
+    max-width: 330px; 
+    padding: 1rem; 
+  }
+
+  .stat-text { 
+    font-size: 45px;
+    padding-right: 30px;
+    margin-right: 120px;
+    text-align: center; 
+    margin-bottom: 0.5rem; 
+  }
+  .percentage { 
+    font-size: 55px; 
+    top: 25%; 
+  }
+  .profit { 
+    font-size: 25px; 
+    top: 55%; 
+  }
+
   .quotation-left, .quotation-right, .quotation-right2 {
     display: none;
   }
+
   .glide-doctor-quotes .glide__slide {
     flex-direction: column;
     align-items: center;
@@ -504,15 +587,19 @@ body {
   }
 
   .quote-text {
-    font-size: 20px;
-    line-height: 1.5;
-    color: #238014;
+    display: none;
+  }
+
+  .quote-text-small {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: -20px;
   }
 
   .quote-signature img {
     width: 60px;
     height: auto;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
 
   .doctor-name-active {
@@ -520,11 +607,17 @@ body {
     color: #555;
   }
 
+  
   .doctor-names-nav {
-    text-align: center;
+    width: 95%;
+    text-align: flex-start;
     flex-direction: column;
-    align-items:flex-end;
-    margin-left: 40px;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: -150px;
+  }
+  .doctor-name-active {
+    font-size: 10px;
   }
 
   .doctor-nav-btn {
@@ -533,17 +626,14 @@ body {
   }
 
   .doctor-quotes-arrows {
-    margin-top: 10px;
+    margin-bottom: 10px;
     justify-content: center;
     gap: 16px;
   }
 
   .doctor-arrow-left,
   .doctor-arrow-right {
-    font-size: 20px;
-    background: none;
-    border: none;
-    color: #238014;
+    font-size: 15px;
     cursor: pointer;
   }
   .footer-links {
@@ -572,46 +662,6 @@ body {
   }
 }
 
-/* ✅ Mobile view: stacked vertically */
-@media (max-width: 600px) {
-  .footer-links {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-column {
-    width: 100%;
-    margin-bottom: 25px;
-  }
-
-  .footer-logo img {
-    width: 130px;
-    margin-bottom: 15px;
-  }
-
-  .footer-column h4 {
-    font-size: 15px;
-  }
-
-  .footer-column ul,
-  .footer-info {
-    padding: 0;
-    list-style: none;
-    font-size: 13px;
-  }
-
-  .footer-column ul li,
-  .footer-info li {
-    margin-bottom: 8px;
-  }
-
-  .footer-column a {
-    color: #000; /* or your theme color */
-    text-decoration: none;
-  }
-}
-
 @media (max-width: 600px) {
   .navbar .container {
     flex-direction: row;
@@ -631,11 +681,16 @@ body {
     width: 130px;
     padding-left: 0;
     margin-left: 40px;
+    margin-right: 10px;
   }
 
   .icons {
     gap: 10px;
     padding: 0;
+  }
+
+  .cart-container {
+    padding-right: 15px;
   }
 
   .nav-container {
@@ -708,17 +763,17 @@ body {
     position: absolute;
     justify-content: center;
     top: 70%;
-    left: 2%;
+    left: 0;
     transform: none;
     display: flex;
     justify-content: center;
-    gap: 7px;
+    gap: 5px;
     width: 100%;
     margin-top: 20px;
   }
   .hero-stats-item {
     width: 83px;
-    height: 83px;
+    height: 75px;
     border: 2px solid #ffffff;
   }
   .mass {
@@ -727,6 +782,11 @@ body {
   .description {
     font-size: 12px;
     max-width: 80px;
+  }
+
+  .glide__pause-btn {
+    width: 40px;
+    height: 40px;
   }
 
   .tab-section {
@@ -763,6 +823,7 @@ body {
 
   .tab-image img {
     padding-top: 30px;
+    opacity: 0.7;
   }
 
   .tab-title {
@@ -784,13 +845,13 @@ body {
   }
 
   .tab-shop-button {
+    width: 40%;
+    height: 15%;
     top: 80%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 14px;
-    padding: 4px 15px;
-    height: auto;
-    width: auto;
+    line-height: 1.4;
   }
 
   .feature-container {
@@ -837,10 +898,9 @@ body {
   }
 
   .testimonial-content {
-  position: absolute;
-  bottom: 55%;
+  bottom: 70%;
   left: 0;
-  padding: 20px;
+  padding: 0px 20px;
   margin-bottom: 0;
   width: 45%;
   display: flex;
@@ -848,8 +908,10 @@ body {
   align-items:flex-start;
   text-align: flex-start;
   }
-
   .testimonial-text {
+    display: none;
+  }
+  .testimonial-text-small {
     font-size: 14px;
     line-height: 1.2;
     width: 100%;
@@ -857,7 +919,7 @@ body {
 
   .testimonial-author {
     font-size: 14px;
-    margin: 10px;
+    margin: 5px;
   }
 
   .testimonial-button {
@@ -875,14 +937,14 @@ body {
     gap: 10px;
   }
 
-  .glide__arrow {
+  .glide-testimonials .glide__arrow {
+    position: relative;
     font-size: 14px;
-    font-weight: 400;
-    width: 10px;
-    height: 10px;
-    background: none;
-    border: none;
+    font-weight: 100;
     cursor: pointer;
+    display: flex;
+    width: 30px;
+    height: 50px;
   }
 
   .benefit-card {
@@ -916,6 +978,44 @@ body {
   }
   .health-benefits-lines { 
     gap: 12px; 
+  }
+
+  .health-benefits-arrows {
+    position: absolute;
+    bottom: -120px;
+    right: 5%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+  }
+
+  .health-arrow-left,
+  .health-arrow-right {
+    width: 60px;
+    height: 60px;
+
+  }
+  .health-arrow-left,
+  .health-arrow-right,
+  .doctor-arrow-left,
+  .doctor-arrow-right {
+    
+    font-size: 30px;
+    border: 2px solid #55ab26;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #55ab26;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .health-arrow-left:hover,
+  .health-arrow-right:hover {
+    background-color: #238014;
+    color: white;
   }
 
   .stats-grid {
@@ -968,16 +1068,20 @@ body {
 
 
   .doctor-image img {
-    width: 310px;
+    width: 295px;
     height: auto;
   }
 
   .quote-content {
     padding-top: 0;
-    margin-top: -140px;
+    margin-top: -170px;
   }
 
   .quote-text {
+    display: none;
+  }
+
+  .quote-text-small {
     font-size: 18px;
     line-height: 1.4;
     margin-top: -20px;
@@ -985,6 +1089,7 @@ body {
 
   .quote-signature img {
     width: 60px;
+    transform: translateX(150%);
     height: auto;
     margin: 0;
   }
@@ -994,10 +1099,11 @@ body {
     padding: 0;
   }
   .doctor-names-nav {
-    text-align: center;
+    width: 95%;
+    text-align: flex-start;
     flex-direction: column;
-    align-items: flex-end;
-    margin-left: 40px;
+    align-items: center;
+    margin-top: 10px;
   }
   .doctor-name-active {
     font-size: 10px;
@@ -1015,33 +1121,22 @@ body {
     width: 100%;
     font-size: 20px;
     text-align: center;
-    margin-bottom: 20px;
     margin: 0;
+    padding: 0;
   }
   .recipes-container { 
-    padding: 40px 20px 80px; 
-  }
-  .benefit-card { 
-    height: 360px; 
-    
-  }
-  .recipes-title {
-    font-size: 45px;
-    padding-right: 30px;
-    margin-right: 120px;
-    text-align: center; 
-    margin-bottom: 0.5rem; 
+    padding: 30px 20px 80px; 
   }
 
   .recipe-description { 
-    font-size: 20px; 
-    line-height: 1.4; 
-    padding: 0 12px; 
+    font-size: 16px; 
+    line-height: 1.2; 
+    padding: 0; 
   }
   .recipe-plus { 
-    width: 44px; 
-    height: 44px; 
-    font-size: 28px; 
+    width: 10px; 
+    height: 10px; 
+    font-size: 20px; 
   }
 
   .store-container { 
@@ -1073,29 +1168,39 @@ body {
   }
 
   .footer-links {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 60px;
   }
 
   .footer-column {
-    flex: 1 1 45%;
-    min-width: 200px;
+    width: 100%;
+    margin-bottom: 25px;
   }
 
   .footer-logo img {
-    width: 150px;
+    width: 130px;
+    margin-bottom: 15px;
   }
 
   .footer-column h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #ffffff;
+    font-size: 15px;
   }
 
-  .footer-column a,
+  .footer-column ul,
   .footer-info {
-    font-size: 14px;
-    color: #ffffff;
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+  }
+
+  .footer-column ul li,
+  .footer-info li {
+    margin-bottom: 8px;
+  }
+
+  .footer-column a {
+    text-decoration: none;
   }
 }

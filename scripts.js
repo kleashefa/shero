@@ -194,6 +194,9 @@ document.addEventListener("DOMContentLoaded", () => {
       768: {
         perView: 2,
       },
+      600: {
+        perView: 1,
+      }
     },
   });
   recipesGlide.mount();
