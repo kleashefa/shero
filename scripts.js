@@ -7,6 +7,8 @@ hamburger.addEventListener("click", () => {
   document.body.style.overflow = navWrapper.classList.contains("active")
     ? "hidden"
     : "auto";
+
+    hamburger.textContent = navWrapper.classList.contains("active") ? "✖" : "☰";
 });
 
 //Karusel per hero-banner
