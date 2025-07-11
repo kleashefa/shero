@@ -8,7 +8,7 @@ hamburger.addEventListener("click", () => {
     ? "hidden"
     : "auto";
 
-    hamburger.textContent = navWrapper.classList.contains("active") ? "✖" : "☰";
+  hamburger.textContent = navWrapper.classList.contains("active") ? "✖" : "☰";
 });
 
 //Karusel per hero-banner
@@ -120,21 +120,8 @@ document.addEventListener("DOMContentLoaded", () => {
       autoplay: false,
       animationDuration: 1200,
       keyboard: true,
-    }).mount();
-  } catch (error) {
-    console.error("Testimonial Glide initialization failed:", error);
-  }
-
-  try {
-    const testimonialGlide = new Glide(".glide-testimonials", {
-      type: "carousel",
-      perView: 1,
-      gap: 0,
-      bound: true,
-      autoplay: false,
-      animationDuration: 1200,
-      keyboard: true,
-    }).mount();
+    });
+    testimonialGlide.mount();
   } catch (error) {
     console.error("Testimonial Glide initialization failed:", error);
   }
@@ -178,26 +165,24 @@ document.addEventListener("DOMContentLoaded", () => {
   } catch (error) {
     console.error("Doctor quotes carousel initialization failed:", error);
   }
-
-  const recipesGlide = new Glide(".glide-recipes", {
-    type: "carousel",
-    perView: 3,
-    gap: 20,
-    bound: true,
-    autoplay: false,
-    animationDuration: 1200,
-    keyboard: true,
-    breakpoints: {
-      1024: {
-        perView: 3,
+  if (window.innerWidth > 600) {
+    const recipesGlide = new Glide(".glide-recipes", {
+      type: "carousel",
+      perView: 3,
+      gap: 20,
+      bound: true,
+      autoplay: false,
+      animationDuration: 1200,
+      keyboard: true,
+      breakpoints: {
+        1024: {
+          perView: 3,
+        },
+        768: {
+          perView: 3,
+        },
       },
-      768: {
-        perView: 3,
-      },
-      600: {
-        perView: 3,
-      }
-    },
-  });
-  recipesGlide.mount();
+    });
+    recipesGlide.mount();
+  }
 });

@@ -79,10 +79,12 @@
 
 /* Testimonial Glide Arrows */
 .glide-testimonials .glide__arrows {
-  position: static;
   display: flex;
+  position: absolute;
+  bottom: 130px;
+  left: 110px;
+  justify-content: flex-start;
   gap: 10px;
-  margin-top: 20px;
   z-index: 10;
 }
 
@@ -131,7 +133,7 @@
 
 .quotation-right2 {
   position: absolute;
-  bottom: 115px;
+  bottom: 48px;
   right: 100px;
   font-size: 100px;
   color: #238014;
