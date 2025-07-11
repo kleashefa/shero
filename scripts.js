@@ -192,10 +192,10 @@ document.addEventListener("DOMContentLoaded", () => {
         perView: 3,
       },
       768: {
-        perView: 2,
+        perView: 3,
       },
       600: {
-        perView: 1,
+        perView: 3,
       }
     },
   });

@@ -486,8 +486,8 @@ body {
     transform: translateX(50%);
     bottom: -90px;
   }
-  .health-benefits-lines { 
-    gap: 12px; 
+  .health-benefits-lines {
+    gap: 12px;
   }
 
   .health-benefits-arrows {
@@ -503,13 +503,11 @@ body {
   .health-arrow-right {
     width: 60px;
     height: 60px;
-
   }
   .health-arrow-left,
   .health-arrow-right,
   .doctor-arrow-left,
   .doctor-arrow-right {
-    
     font-size: 30px;
     border: 2px solid #55ab26;
     border-radius: 50%;
@@ -521,7 +519,7 @@ body {
     align-items: center;
     justify-content: center;
   }
-  
+
   .health-arrow-left:hover,
   .health-arrow-right:hover {
     background-color: #238014;
@@ -536,29 +534,31 @@ body {
     margin-right: 10px;
   }
 
-  .stats-item { 
-    left:-5%;
-    max-width: 330px; 
-    padding: 1rem; 
+  .stats-item {
+    left: -5%;
+    max-width: 330px;
+    padding: 1rem;
   }
 
-  .stat-text { 
+  .stat-text {
     font-size: 45px;
     padding-right: 30px;
     margin-right: 120px;
-    text-align: center; 
-    margin-bottom: 0.5rem; 
+    text-align: center;
+    margin-bottom: 0.5rem;
   }
-  .percentage { 
-    font-size: 55px; 
-    top: 25%; 
+  .percentage {
+    font-size: 55px;
+    top: 25%;
   }
-  .profit { 
-    font-size: 25px; 
-    top: 55%; 
+  .profit {
+    font-size: 25px;
+    top: 55%;
   }
 
-  .quotation-left, .quotation-right, .quotation-right2 {
+  .quotation-left,
+  .quotation-right,
+  .quotation-right2 {
     display: none;
   }
 
@@ -607,7 +607,6 @@ body {
     color: #555;
   }
 
-  
   .doctor-names-nav {
     width: 95%;
     text-align: flex-start;
@@ -671,6 +670,15 @@ body {
     padding: 10px 20px;
   }
 
+  .hamburger {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+    padding-top: 50px;
+    margin-left: -55px;
+    z-index: 2000;
+  }
+
   .logo-container {
     flex-grow: 1;
     display: flex;
@@ -680,8 +688,7 @@ body {
   .logo {
     width: 130px;
     padding-left: 0;
-    margin-left: 40px;
-    margin-right: 10px;
+    margin-left: 150px;
   }
 
   .icons {
@@ -699,7 +706,7 @@ body {
     align-items: center;
     padding: 0 1px;
     height: 100px;
-    width: 100%;
+    width: 65%;
   }
 
   .nav-wrapper {
@@ -739,7 +746,9 @@ body {
     text-align: center;
   }
 
-  .natural, .super, .protein {
+  .natural,
+  .super,
+  .protein {
     font-size: 40px;
     line-height: 1.1;
   }
@@ -898,20 +907,21 @@ body {
   }
 
   .testimonial-content {
-  bottom: 70%;
-  left: 0;
-  padding: 0px 20px;
-  margin-bottom: 0;
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  text-align: flex-start;
+    bottom: 20%;
+    left: 0;
+    padding: 0px 20px;
+    margin-bottom: 0;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: flex-start;
   }
   .testimonial-text {
     display: none;
   }
   .testimonial-text-small {
+    display: block;
     font-size: 14px;
     line-height: 1.2;
     width: 100%;
@@ -964,7 +974,7 @@ body {
     padding: 15px 18px;
   }
 
-  .benefit-title{
+  .benefit-title {
     font-size: 20px;
   }
   .benefit-description {
@@ -976,8 +986,8 @@ body {
     transform: translateX(50%);
     bottom: -90px;
   }
-  .health-benefits-lines { 
-    gap: 12px; 
+  .health-benefits-lines {
+    gap: 12px;
   }
 
   .health-benefits-arrows {
@@ -993,13 +1003,11 @@ body {
   .health-arrow-right {
     width: 60px;
     height: 60px;
-
   }
   .health-arrow-left,
   .health-arrow-right,
   .doctor-arrow-left,
   .doctor-arrow-right {
-    
     font-size: 30px;
     border: 2px solid #55ab26;
     border-radius: 50%;
@@ -1011,7 +1019,7 @@ body {
     align-items: center;
     justify-content: center;
   }
-  
+
   .health-arrow-left:hover,
   .health-arrow-right:hover {
     background-color: #238014;
@@ -1024,23 +1032,26 @@ body {
     gap: 1rem;
   }
 
-  .stats-item { 
-    left:-5%;
-    max-width: 160px; padding: 1rem; 
+  .stats-item {
+    left: -5%;
+    max-width: 160px;
+    padding: 1rem;
   }
 
-  .stat-text { 
+  .stat-text {
     font-size: 45px;
     padding-right: 30px;
     margin-right: 120px;
-    text-align: center; 
-    margin-bottom: 0.5rem; 
+    text-align: center;
+    margin-bottom: 0.5rem;
   }
-  .percentage { 
-    font-size: 1.7rem; top: 25%; 
+  .percentage {
+    font-size: 1.7rem;
+    top: 25%;
   }
-  .profit { 
-    font-size: 0.7rem; top: 55%; 
+  .profit {
+    font-size: 0.7rem;
+    top: 55%;
   }
   .stats-grid {
     position: relative;
@@ -1050,8 +1061,9 @@ body {
     justify-content: center;
     text-align: center;
   }
-  .stats-button { 
-    font-size: 14px; padding: 8px 18px; 
+  .stats-button {
+    font-size: 14px;
+    padding: 8px 18px;
   }
 
   .prod-description {
@@ -1066,6 +1078,9 @@ body {
     margin-right: 30px;
   }
 
+  .doctor-quote-slide {
+    height: 570px;
+  }
 
   .doctor-image img {
     width: 295px;
@@ -1082,16 +1097,17 @@ body {
   }
 
   .quote-text-small {
-    font-size: 18px;
+    display: block;
+    font-size: 16px;
     line-height: 1.4;
     margin-top: -20px;
   }
 
   .quote-signature img {
     width: 60px;
-    transform: translateX(150%);
+    transform: translateX(30%);
     height: auto;
-    margin: 0;
+    margin-right: 20px;
   }
 
   .doctor-nav-btn {
@@ -1099,11 +1115,12 @@ body {
     padding: 0;
   }
   .doctor-names-nav {
-    width: 95%;
-    text-align: flex-start;
-    flex-direction: column;
+    display: flex;
+    width: 135%;
+    flex-direction: row;
     align-items: center;
-    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: nowrap;
   }
   .doctor-name-active {
     font-size: 10px;
@@ -1124,31 +1141,31 @@ body {
     margin: 0;
     padding: 0;
   }
-  .recipes-container { 
-    padding: 30px 20px 80px; 
+  .recipes-container {
+    padding: 30px 20px 80px;
   }
 
-  .recipe-description { 
-    font-size: 16px; 
-    line-height: 1.2; 
-    padding: 0; 
+  .recipe-description {
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 0;
   }
-  .recipe-plus { 
-    width: 10px; 
-    height: 10px; 
-    font-size: 20px; 
+  .recipe-plus {
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
   }
 
-  .store-container { 
-    padding: 30px 15px; 
+  .store-container {
+    padding: 30px 15px;
   }
-  .stores-title { 
-    font-size: 24px; 
-    margin: 20px 0; 
+  .stores-title {
+    font-size: 24px;
+    margin: 20px 0;
   }
-  .store-button { 
-    padding: 10px 25px; 
-    font-size: 16px; 
+  .store-button {
+    padding: 10px 25px;
+    font-size: 16px;
   }
 
   .newsletter-container {
@@ -1156,15 +1173,15 @@ body {
     text-align: center;
   }
 
-  .newsletter-title { 
-    font-size: 26px; 
+  .newsletter-title {
+    font-size: 26px;
   }
-  .newsletter-description { 
-    font-size: 28px; 
-    line-height: 1.5; 
+  .newsletter-description {
+    font-size: 28px;
+    line-height: 1.5;
   }
-  .email-input { 
-    font-size: 18px; 
+  .email-input {
+    font-size: 18px;
   }
 
   .footer-links {
