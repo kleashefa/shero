@@ -277,7 +277,7 @@ body {
     padding-top: 10px;
   }
   .hero-text {
-    top: 40%;
+    top: 45%;
     left: 50%;
     width: 90vw;
     text-align: center;
@@ -286,7 +286,7 @@ body {
   .natural,
   .super,
   .protein {
-    font-size: 55px;
+    font-size: 45px;
     line-height: 0.4;
   }
   .small-text {
@@ -304,7 +304,7 @@ body {
   .hero-stats-container {
     position: absolute;
     justify-content: center;
-    top: 70%;
+    top: 68%;
     left: 2%;
     transform: none;
     display: flex;
@@ -442,6 +442,7 @@ body {
     display: none;
   }
   .testimonial-text-small {
+    display: block;
     font-size: 22px;
     line-height: 1.2;
     width: 100%;
@@ -464,10 +465,12 @@ body {
   }
 
   .glide-testimonials .glide__arrows {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+    justify-content: flex-start;
+    gap: 10px;
+    z-index: 10;
   }
 
   .glide__arrow {
@@ -639,6 +642,29 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+  }
+
+  .recipes-title {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+  .recipes-container {
+    padding: 30px 20px 80px;
+  }
+
+  .recipe-description {
+    font-size: 22px;
+    line-height: 1.2;
+    padding: 0;
+  }
+  .recipe-plus {
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
   }
 
   .footer-column {
@@ -941,10 +967,12 @@ body {
   }
 
   .glide-testimonials .glide__arrows {
-    display: flex;
-    margin-top: 0;
-    justify-content: center;
+    position: absolute;
+    top: 90px;
+    left: 15px;
+    justify-content: flex-start;
     gap: 10px;
+    z-index: 10;
   }
 
   .glide-testimonials .glide__arrow {
@@ -1139,6 +1167,7 @@ body {
     font-size: 20px;
     text-align: center;
     margin: 0;
+    margin-bottom: 15px;
     padding: 0;
   }
   .recipes-container {
@@ -1146,7 +1175,7 @@ body {
   }
 
   .recipe-description {
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.2;
     padding: 0;
   }
@@ -1154,6 +1183,15 @@ body {
     width: 10px;
     height: 10px;
     font-size: 20px;
+  }
+
+  .glide-recipes .glide__slides {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .glide-recipes .glide__slide {
+    width: 100%;
   }
 
   .store-container {
