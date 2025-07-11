@@ -438,10 +438,25 @@ body {
     text-align: flex-start;
   }
 
-  .testimonial-text {
+  .quotation-left,
+  .quotation-right,
+  .quotation-right2 {
     display: none;
   }
-  .testimonial-text-small {
+
+  .quotation-left-small,
+  .quotation-right-small,
+  .quotation-right2-small {
+    position: absolute;
+    font-family: "Copperplate Gothic Bold", Times, serif;
+    font-weight: bolder;
+    font-size: 22px;
+    color: #55ab25;
+    top: -80px;
+    left: -30px;
+  }
+
+  .testimonial-text {
     display: block;
     font-size: 22px;
     line-height: 1.2;
@@ -557,12 +572,6 @@ body {
   .profit {
     font-size: 25px;
     top: 55%;
-  }
-
-  .quotation-left,
-  .quotation-right,
-  .quotation-right2 {
-    display: none;
   }
 
   .glide-doctor-quotes .glide__slide {
@@ -941,16 +950,55 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    text-align: flex-start;
+    text-align: left;
   }
-  .testimonial-text {
+  .quotation-left,
+  .quotation-right,
+  .quotation-right2 {
     display: none;
   }
-  .testimonial-text-small {
+
+  .quotation-left-small {
+    position: absolute;
+    font-family: "Copperplate Gothic Bold", Times, serif;
+    font-weight: bolder;
+    font-size: 22px;
+    color: rgba(35, 128, 20, 1);
+    top: -20px;
+    left: 10px;
+    z-index: 5;
     display: block;
+  }
+
+  .quotation-right-small {
+    position: absolute;
+    font-family: "Copperplate Gothic Bold", Times, serif;
+    font-weight: bolder;
+    font-size: 22px;
+    color: rgba(35, 128, 20, 1);
+    top: 10px;
+    left: 50px;
+    z-index: 5;
+    display: block;
+  }
+
+  .quotation-right2-small {
+    position: absolute;
+    font-family: "Copperplate Gothic Bold", Times, serif;
+    font-weight: bolder;
+    font-size: 22px;
+    color: rgba(35, 128, 20, 1);
+    top: 5px;
+    left: 77%;
+    z-index: 5;
+    display: block;
+  }
+
+  .testimonial-text {
     font-size: 14px;
     line-height: 1.2;
     width: 100%;
+    margin-right: 10px;
   }
 
   .testimonial-author {
@@ -968,7 +1016,7 @@ body {
 
   .glide-testimonials .glide__arrows {
     position: absolute;
-    top: 90px;
+    top: 100px;
     left: 15px;
     justify-content: flex-start;
     gap: 10px;
@@ -1121,10 +1169,6 @@ body {
   }
 
   .quote-text {
-    display: none;
-  }
-
-  .quote-text-small {
     display: block;
     font-size: 16px;
     line-height: 1.4;
@@ -1136,6 +1180,28 @@ body {
     transform: translateX(30%);
     height: auto;
     margin-right: 20px;
+  }
+
+  .doc-quotation-left-small {
+    position: absolute;
+    font-family: "Copperplate Gothic Bold", Times, serif;
+    font-weight: bolder;
+    font-size: 22px;
+    color: rgba(35, 128, 20, 1);
+    bottom: 90%;
+    left: 7%;
+    display: block;
+  }
+
+  .quotation-right-small {
+    position: absolute;
+    font-family: "Copperplate Gothic Bold", Times, serif;
+    font-weight: bolder;
+    font-size: 22px;
+    color: rgba(35, 128, 20, 1);
+    top: 10%;
+    left: 87%;
+    display: block;
   }
 
   .doctor-nav-btn {
