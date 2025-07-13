@@ -599,10 +599,6 @@ body {
   }
 
   .quote-text {
-    display: none;
-  }
-
-  .quote-text-small {
     font-size: 18px;
     line-height: 1.4;
     margin-top: -20px;
@@ -612,6 +608,59 @@ body {
     width: 60px;
     height: auto;
     margin-bottom: 35px;
+  }
+
+  .quotation-left,
+  .quotation-right,
+  .quotation-right2 {
+    display: none;
+  }
+
+  .quotation-left-small {
+    position: absolute;
+    font-family: "Copperplate Gothic Bold", Times, serif;
+    font-weight: bolder;
+    font-size: 22px;
+    color: rgba(35, 128, 20, 1);
+    top: -10px;
+    left: 10px;
+    z-index: 5;
+    display: block;
+  }
+
+  .doc-quotation-left-small {
+    position: absolute;
+    font-family: "Copperplate Gothic Bold", Times, serif;
+    font-weight: bolder;
+    font-size: 22px;
+    color: rgba(35, 128, 20, 1);
+    bottom: 83%;
+    left: 2%;
+    display: block;
+  }
+
+  .quotation-right-small {
+    position: absolute;
+    font-family: "Copperplate Gothic Bold", Times, serif;
+    font-weight: bolder;
+    font-size: 22px;
+    color: rgba(35, 128, 20, 1);
+    top: -15%;
+    left: 92%;
+    z-index: 5;
+    display: block;
+  }
+
+  .quotation-right2-small {
+    position: absolute;
+    font-family: "Copperplate Gothic Bold", Times, serif;
+    font-weight: bolder;
+    font-size: 22px;
+    color: rgba(35, 128, 20, 1);
+    top: 25px;
+    left: 43%;
+    z-index: 5;
+    display: block;
   }
 
   .doctor-name-active {
@@ -966,18 +1015,6 @@ body {
     color: rgba(35, 128, 20, 1);
     top: -20px;
     left: 10px;
-    z-index: 5;
-    display: block;
-  }
-
-  .quotation-right-small {
-    position: absolute;
-    font-family: "Copperplate Gothic Bold", Times, serif;
-    font-weight: bolder;
-    font-size: 22px;
-    color: rgba(35, 128, 20, 1);
-    top: 10px;
-    left: 50px;
     z-index: 5;
     display: block;
   }
